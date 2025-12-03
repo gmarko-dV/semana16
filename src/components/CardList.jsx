@@ -5,8 +5,7 @@ export default function CardList({ items }) {
     <div className="row g-3">
       {items.map((item, i) => (
         <div key={i} className="col-md-4">
-          <Card name={item.title} />
-          <Card name={item.description} />
+          <Card name={item.title} image={item.thumbnail} />
         </div>
       ))}
     </div>
